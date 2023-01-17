@@ -1,6 +1,11 @@
 package main.normalizers.utils;
 public class NormaliserUtils {
 
+    /**
+     * @param str1 -> inputString
+     * @param str2 -> string of normalize job title list
+     * @return -> Float Number between 0.0 and 1.0 where this is the score (q)
+     */
     public static double validateSimilarity(String str1, String str2){
         double biggestStringLength = Double.max(str1.length(), str2.length());
 
@@ -11,6 +16,11 @@ public class NormaliserUtils {
         return 1.0;
     }
 
+    /**
+     * @param str1 -> inputString
+     * @param str2 -> string of normalize job title list
+     * @return -> Number of changes to transform the str1 to str2 using Levenshtein Distance
+     */
     private static int calculateLevenshteinDistanceBetweenStrings(String str1, String str2) {
         int str1Length = str1.length();
         int str2Length = str2.length();

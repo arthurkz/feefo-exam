@@ -4,6 +4,10 @@ import main.normalizers.utils.NormaliserUtils;
 
 public class Normaliser implements Normalise {
 
+    /**
+     * @param jobTitle -> inputString
+     * @return -> String normalized according the Array normalizedJobTitlesList
+     */
     @Override
     public String normalise(String jobTitle) {
         double q;

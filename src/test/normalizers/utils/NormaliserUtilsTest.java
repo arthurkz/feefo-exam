@@ -15,7 +15,7 @@ public class NormaliserUtilsTest {
     private String str2TestMock = "Accountant";
 
     @Test
-    public void returnValidadeSimilarity(){
+    public void returnSimilarityBetweenTwoStrings(){
         var similarityValue = NormaliserUtils.validateSimilarity(str1TestMock, str2TestMock);
         assertTrue(0.3076923076923077 == similarityValue);
     }
